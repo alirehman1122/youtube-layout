@@ -6,6 +6,7 @@ body{
     width: 100%;
     height: 50px;
     display: flex;
+    justify-content: space-between;
 }
 .sidebar{
     background-color: aqua;
@@ -38,6 +39,8 @@ body{
     display: flex;
     flex-direction: column;
     cursor: pointer;
+    margin-top: 8px;
+    margin-left: 16px;
   }
   
   .line {
@@ -76,8 +79,30 @@ body{
   button:hover {
     background-color:#222222;
   }
-  img{
+  .s{
     height: 23px;
     width: 23px;
   }
-  
+  .m{
+    margin-left: 10px;
+    border-radius: 50px;
+  }
+  .v{
+    border-radius: 100px;
+    width: 38px;
+    height: 38px;
+  }
+  .logo{
+    display: flex;
+  justify-content: center
+  }
+  .yout{
+    height: 36px;
+    width: 39px;
+    margin-left: 24px;
+  }
+  .name{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 5px;
+  }
