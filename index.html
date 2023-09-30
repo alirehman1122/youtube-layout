@@ -1,48 +1,337 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Material Icons -->
+
+    <link  rel="icon" href="./imgs/32.jpg" type="img"/>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="styles.css" />
+    
     <title>Youtube</title>
-</head>
-<body>
-    <header class="head">
-        <div class="logo">
-            <div class="menu-button">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-              </div>
-           <img class="yout" src="img/icons8-youtube-logo-96.png" alt="">
-           <div ><h3 class="name">youTube</h3></div>
-        </div>
-        <div class="search-container">
-            <input type="text" placeholder="Search...">
-            <button type="submit"><div class="srch"><img class="s" src="img/icons8-search-50.png" alt="search"></div></button>
-         <img class="m" src="img/icons8-microphone-48.png" alt="mic">
-        </div>
-        <div class="profile">
-           <img class="v" src="img/icons8-zoom-50.png" alt="">
-           <img class="v" src="img/icons8-notification-30.png" alt="">
-        </div>
+  </head>
+  <body>
+      
+    <!-- Header Starts -->
+    <div class="header">
+      <div class="header__left">
+        <i id="menu" class="material-icons">menu</i>
+        <img src="img/logoyout.png" alt="youtube logo">
+      </div>
 
-    </header>
+      <div class="header__search">
+        <form action="">
+          <input type="text" placeholder="Search" />
+          <button><i class="material-icons">search</i></button>
+        </form>
+      </div>
 
-    <div class="main">
-        <div class="sidebar">
-
-        </div>
-        <div class="midd-main">
-            <div class="bar">
-
-            </div>
-            <div class="vid">
-
-            </div>
-        </div>
-
+      <div class="header__icons">
+        <i class="material-icons display-this">search</i>
+        <i class="material-icons">videocam</i>
+        <i class="material-icons">apps</i>
+        <i class="material-icons">notifications</i>
+        <i class="material-icons display-this">account_circle</i>
+      </div>
     </div>
-</body>
+    <!-- Header Ends -->
+
+    <!-- Main Body Starts -->
+    <div class="mainBody">
+      <!-- Sidebar Starts -->
+
+      <div class="sidebar">
+        <div class="sidebar__categories">
+          <div class="sidebar__category">
+            <i class="material-icons">home</i>
+            <span>Home</span>
+          </div>
+          <div class="sidebar__category">
+            <i class="material-icons">local_fire_department</i>
+            <span>Trending</span>
+          </div>
+          <div class="sidebar__category">
+            <i class="material-icons">subscriptions</i>
+            <span>Subcriptions</span>
+          </div>
+        </div>
+        <hr />
+        <div class="sidebar__categories">
+          <div class="sidebar__category">
+            <i class="material-icons">library_add_check</i>
+            <span>Library</span>
+          </div>
+          <div class="sidebar__category">
+            <i class="material-icons">history</i>
+            <span>History</span>
+          </div>
+          <div class="sidebar__category">
+            <i class="material-icons">play_arrow</i>
+            <span>Your Videos</span>
+          </div>
+          <div class="sidebar__category">
+            <i class="material-icons">watch_later</i>
+            <span>Watch Later</span>
+          </div>
+          <div class="sidebar__category">
+            <i class="material-icons">thumb_up</i>
+            <span>Liked Videos</span>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <!-- Sidebar Ends -->
+
+      <!-- Videos Section -->
+      <div class="videos">
+        <h1>Recommended</h1>
+
+        <div class="videos__container">
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <img src="https://i.ytimg.com/vi/tTDsm0a4V8E/hqdefault.jpg" alt="" />
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <img src="https://yt3.ggpht.com/ytc/APkrFKZEcifGrcSCJ7XUDil4bQp1ZnUWirytDqVn_qdc3Q=s48-c-k-c0x00ffffff-no-rj" alt="" />
+              </div>
+              <div class="title">
+                <h3>
+                  Breaking news Caretaker PM gets Resighnation
+                </h3>
+                <a href="">Dawn news</a>
+                <span>1M Views • 3 Months Ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <img src="https://i.ytimg.com/vi/UKylpHr-x04/hqdefault.jpg" alt="" />
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <img src="https://yt3.ggpht.com/kE5_i9Ror638AHYfq7SPLGZa8qPnDvU4SR51zMLU1bBlul_G6uPkmZt6_mbWc9WjyKdD5iYe=s48-c-k-c0x00ffffff-no-rj" alt="" />
+              </div>
+              <div class="title">
+                <h3>FIA in action | Money exchangers in trouble | breaking news</h3>
+                <a href="">Geo News</a>
+                <span>5M Views • 1 Day Ago</span>
+              </div>
+            </div>
+          </div>
+          <!-- Single Video Ends -->
+          <div class="video">
+            <div class="video__thumbnail">
+              <img src="https://i.ytimg.com/vi/zNzODcnwJXk/hqdefault.jpg" alt="" />
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <img
+                  src="https://yt3.ggpht.com/ytc/APkrFKYVHnS1a_oie1hqeqw049YzLgbjcxH7LiLgeizc=s250-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                />
+              </div>
+              <div class="title">
+                <h3>Ganji Swag in portugal | walking tales portugal</h3>
+                <a href=""> Ganji swag</a>
+                <span>90k Views •  4 Days Ago</span>
+              </div>
+            </div>
+          </div>
+
+          
+
+
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <img src="https://i.ytimg.com/vi/s43rCwYR-i8/hqdefault.jpg" alt="" />
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <img
+                  src="https://yt3.ggpht.com/ytc/APkrFKYCTt41xtscNdPp_UBnv_B10VwJmplDsTk2S67pyf8=s48-c-k-c0x00ffffff-no-rj-mo"
+                  alt=""
+                />
+              </div>
+              <div class="title">
+                <h3>qazi sahab |mast mange barware de | song |pushto</h3>
+                <a href="">qazi sahab</a>
+                <span>179K • 8 Months Ago</span>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <img src="https://i.ytimg.com/vi/rp7r8odVkuM/maxresdefault.jpg" alt="" />
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <img src="https://yt3.ggpht.com/kE5_i9Ror638AHYfq7SPLGZa8qPnDvU4SR51zMLU1bBlul_G6uPkmZt6_mbWc9WjyKdD5iYe=s48-c-k-c0x00ffffff-no-rj" alt="" />
+              </div>
+              <div class="title">
+                <h3>
+                  Dollar price in pakistan | dollar decrease in pakistan | dollar down                </h3>
+                <a href="">Geo News</a>
+                <span>1.5M Views • 1 Months Ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <img src="https://i.ytimg.com/vi/Rrtjqt7CPpE/hqdefault.jpg" alt="" />
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <img src="https://yt3.ggpht.com/ytc/APkrFKYCTt41xtscNdPp_UBnv_B10VwJmplDsTk2S67pyf8=s48-c-k-c0x00ffffff-no-rj-mo" alt="" />
+              </div>
+              <div class="title">
+                <h3>Naray baran | wajid layq | naray baran 2.0</h3>
+                <a href="">Wajid Layq</a>
+                <span>1.9M Views • 6 Months Ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <img src="https://img.youtube.com/vi/46cXFUzR9XM/maxresdefault.jpg" alt="" />
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <img
+                  src="https://yt3.ggpht.com/ytc/AAUvwnh53ZRIGnyzC28QrfuggCINb3cfNbNWo4Uc6qR9=s48-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                />
+              </div>
+              <div class="title">
+                <h3>Bella Ciao Full Song | La Casa De Papel | Money Heist | Netflix India</h3>
+                <a href="">Netflix</a>
+                <span>10M Views • 11 Months Ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <img src="https://img.youtube.com/vi/d2na6sCyM5Q/maxresdefault.jpg" alt="" />
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <img
+                  src="https://yt3.ggpht.com/ytc/AAUvwnhESPVEatju_1yE-03-KLeSrnSLc5yy0RcvhPd5Lg=s48-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                />
+              </div>
+              <div class="title">
+                <h3>DON'T EVER GIVE UP - Elon Musk (Motivational Video)</h3>
+                <a href=""> Chispa Motivation</a>
+                <span>10M Views • 1 Month Ago</span>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <img src="https://i.ytimg.com/vi/YY9eUqlnPR8/hq720_2.jpg" alt="" />
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <img src="https://yt3.ggpht.com/ytc/APkrFKYCTt41xtscNdPp_UBnv_B10VwJmplDsTk2S67pyf8=s48-c-k-c0x00ffffff-no-rj-mo" alt="" />
+              </div>
+              <div class="title">
+                <h3>
+                  peera baba | new song | pushto song | qaazi sahab
+                </h3>
+                <a href="">QAZI SAQIB</a>
+                <span>18M Views • 3 Months Ago</span>
+              </div>
+            </div>
+          </div>
+
+
+
+
+         
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <img src="https://img.youtube.com/vi/2Ji-clqUYnA/maxresdefault.jpg" alt="" />
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <img
+                  src="https://yt3.ggpht.com/ytc/AAUvwniaHN7MZyFEiNvdHuKMzIWnDF604Z2--O4GCMq-FA=s48-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                />
+              </div>
+              <div class="title">
+                <h3>Javascript Fundamentals</h3>
+                <a href="">Coding Addict</a>
+                <span>179K • 8 Months Ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <img src="https://img.youtube.com/vi/3PHXvlpOkf4/maxresdefault.jpg" alt="" />
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <img
+                  src="https://yt3.ggpht.com/ytc/AAUvwnifaQZvAunS0OFb2y_cieoVjLCVjqQW8Exf3BC1gg=s48-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                />
+              </div>
+              <div class="title">
+                <h3>Build 15 JavaScript Projects - Vanilla JavaScript Course</h3>
+                <a href=""> freeCodeCamp.org </a>
+                <span>470K Views • 8 Months Ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="video__thumbnail">
+              <img src="https://img.youtube.com/vi/CVClHLwv-4I/maxresdefault.jpg" alt="" />
+            </div>
+            <div class="video__details">
+              <div class="author">
+                <img
+                  src="https://yt3.ggpht.com/ytc/AAUvwnhIz_0Su6HhW6Ym50QCroJCAnF10X9xnnMDboN2=s48-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                />
+              </div>
+              <div class="title">
+                <h3>Build Real Time Face Detection With JavaScript</h3>
+                <a href=""> Web Dev Simplified </a>
+                <span>875K Views • 1 Year Ago</span>
+              </div>
+            </div>
+          </div>
+
+         
+        </div>
+      </div>
+    </div>
+
+  </body>
 </html>
